@@ -1,13 +1,50 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  text-align: center;
+}
+
 .section {
+  display: inline-block;
   width: 100%;
   max-width: 500px;
   padding: 20px;
-  margin: auto;
-  font-family: 'sans-serif';
   font-weight: 400;
-  font-size: 18px;
-  line-height: 5px;
+  font-size: 14px;
+  line-height: 10px;
   letter-spacing: 0.08em;
-  text-align: center;
+}
+
+.container :not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
