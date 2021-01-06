@@ -1,0 +1,98 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  text-align: center;
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.08em;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.container :not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.ingredients {
+  margin-bottom: 20px;
+}
+
+.ingredients :not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.img-container {
+  margin-bottom: 20px;
+}
+
+.imgsstyles {
+  width: 100%;
+  max-width: 460px;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.input-styles {
+  margin-bottom: 10px;
+}
+
+.output-title {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#validation-input {
+  margin-bottom: 20px;
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+/*# sourceMappingURL=main.css.map */
