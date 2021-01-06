@@ -7,5 +7,9 @@ inputRef.classList.add('input-styles');
 const nameOutputRef = document.querySelector('#name-output');
 
 inputRef.addEventListener('input', () => {
-    nameOutputRef.innerHTML = inputRef.value;
+    if (inputRef.value !== '') {
+        nameOutputRef.innerHTML = inputRef.value;
+    } else {
+        nameOutputRef.innerHTML = 'незнакомец';
+    }
 });
