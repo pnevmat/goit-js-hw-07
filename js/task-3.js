@@ -19,27 +19,20 @@ const images = [
 const containerRef = document.querySelector('#gallery');
 containerRef.classList.add('img-container');
 
-const catListItemRef = document.createElement('li');
-const fishListItemRef = document.createElement('li');
-const horsesListItemRef = document.createElement('li');
+function markupBuilder(arr) {
+  const imgMarkup = arr.map(item => {
+    const listItemRef = document.createElement('li');
+    const imgRef = document.createElement('img');
+    imgRef.src = item.url;
+    imgRef.alt = item.alt;
+    imgRef.classList.add('imgsstyles');
 
-const catImgRef = document.createElement('img');
-catImgRef.src = images[0].url;
-catImgRef.alt = images[0].alt;
-catImgRef.classList.add('imgsstyles');
+    listItemRef.appendChild(imgRef);
 
-const fishImgRef = document.createElement('img');
-fishImgRef.src = images[1].url;
-fishImgRef.alt = images[1].alt;
-fishImgRef.classList.add('imgsstyles');
+    return listItemRef;
+  });
 
-const horsesImgRef = document.createElement('img');
-horsesImgRef.src = images[2].url;
-horsesImgRef.alt = images[2].alt;
-horsesImgRef.classList.add('imgsstyles');
+  return imgMarkup;
+};
 
-catListItemRef.appendChild(catImgRef);
-fishListItemRef.appendChild(fishImgRef);
-horsesListItemRef.appendChild(horsesImgRef);
-
-containerRef.append(catListItemRef, fishListItemRef, horsesListItemRef);
+containerRef.append(...markupBuilder(images));
